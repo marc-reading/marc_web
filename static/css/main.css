@@ -11,40 +11,40 @@ https://templatemo.com/tm-587-tiya-golf-club
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #81B29A;
-  --secondary-color:              #3D405B;
-  --section-bg-color:             #F4F1DE;
-  --custom-btn-bg-color:          #F2CC8F;
-  --custom-btn-bg-hover-color:    #E07A5F;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --white-color: #ffffff;
+  --primary-color: #81B29A;
+  --secondary-color: #3D405B;
+  --section-bg-color: #F4F1DE;
+  --custom-btn-bg-color: #F2CC8F;
+  --custom-btn-bg-hover-color: #E07A5F;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --link-hover-color: #F2CC8F;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: 'DM Sans', sans-serif;
 
-  --h1-font-size:                 42px;
-  --h2-font-size:                 36px;
-  --h3-font-size:                 28px;
-  --h4-font-size:                 24px;
-  --h5-font-size:                 22px;
-  --h6-font-size:                 20px;
-  --p-font-size:                  18px;
-  --menu-font-size:               16px;
-  --btn-font-size:                14px;
+  --h1-font-size: 42px;
+  --h2-font-size: 36px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --h6-font-size: 20px;
+  --p-font-size: 18px;
+  --menu-font-size: 16px;
+  --btn-font-size: 14px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
@@ -108,7 +108,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -193,6 +193,7 @@ strong {
   -moz-perspective: 300px;
   perspective: 300px;
 }
+
 .cd-headline.rotate-1 b {
   opacity: 0;
   -webkit-transform-origin: 50% 100%;
@@ -206,6 +207,7 @@ strong {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
+
 .cd-headline.rotate-1 b.is-visible {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -217,6 +219,7 @@ strong {
   -moz-animation: cd-rotate-1-in 1.2s;
   animation: cd-rotate-1-in 1.2s;
 }
+
 .cd-headline.rotate-1 b.is-hidden {
   -webkit-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
@@ -233,35 +236,43 @@ strong {
     -webkit-transform: rotateX(180deg);
     opacity: 0;
   }
+
   35% {
     -webkit-transform: rotateX(120deg);
     opacity: 0;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(360deg);
     opacity: 1;
   }
 }
+
 @-moz-keyframes cd-rotate-1-in {
   0% {
     -moz-transform: rotateX(180deg);
     opacity: 0;
   }
+
   35% {
     -moz-transform: rotateX(120deg);
     opacity: 0;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -moz-transform: rotateX(360deg);
     opacity: 1;
   }
 }
+
 @keyframes cd-rotate-1-in {
   0% {
     -webkit-transform: rotateX(180deg);
@@ -271,6 +282,7 @@ strong {
     transform: rotateX(180deg);
     opacity: 0;
   }
+
   35% {
     -webkit-transform: rotateX(120deg);
     -moz-transform: rotateX(120deg);
@@ -279,9 +291,11 @@ strong {
     transform: rotateX(120deg);
     opacity: 0;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(360deg);
     -moz-transform: rotateX(360deg);
@@ -291,40 +305,49 @@ strong {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes cd-rotate-1-out {
   0% {
     -webkit-transform: rotateX(0deg);
     opacity: 1;
   }
+
   35% {
     -webkit-transform: rotateX(-40deg);
     opacity: 1;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(180deg);
     opacity: 0;
   }
 }
+
 @-moz-keyframes cd-rotate-1-out {
   0% {
     -moz-transform: rotateX(0deg);
     opacity: 1;
   }
+
   35% {
     -moz-transform: rotateX(-40deg);
     opacity: 1;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -moz-transform: rotateX(180deg);
     opacity: 0;
   }
 }
+
 @keyframes cd-rotate-1-out {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -334,6 +357,7 @@ strong {
     transform: rotateX(0deg);
     opacity: 1;
   }
+
   35% {
     -webkit-transform: rotateX(-40deg);
     -moz-transform: rotateX(-40deg);
@@ -342,9 +366,11 @@ strong {
     transform: rotateX(-40deg);
     opacity: 1;
   }
+
   65% {
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(180deg);
     -moz-transform: rotateX(180deg);
@@ -501,14 +527,14 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--link-hover-color);
 }
 
 .navbar .dropdown-menu {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border: 0;
   display: inherit;
   opacity: 0;
@@ -539,9 +565,9 @@ strong {
   position: relative;
 }
 
-.navbar .dropdown-item.active, 
+.navbar .dropdown-item.active,
 .navbar .dropdown-item:active,
-.navbar .dropdown-item:focus, 
+.navbar .dropdown-item:focus,
 .navbar .dropdown-item:hover {
   background: transparent;
   color: var(--link-hover-color);
@@ -662,7 +688,7 @@ strong {
   margin-bottom: -100px;
 }
 
-.hero-50 .container + svg {
+.hero-50 .container+svg {
   transform: rotate(180deg);
 }
 
@@ -677,11 +703,11 @@ strong {
   left: 0;
 }
 
-.hero-section > svg {
+.hero-section>svg {
   top: 0;
 }
 
-.hero-section .container + svg {
+.hero-section .container+svg {
   top: auto;
   bottom: -1px;
 }
@@ -691,8 +717,8 @@ strong {
   z-index: 22;
 }
 
-.secondary-color-txt{
-    color: var(--secondary-color) !important;
+.secondary-color-txt {
+  color: var(--secondary-color) !important;
 }
 
 /*---------------------------------------
@@ -707,7 +733,7 @@ strong {
   margin-bottom: -70px;
 }
 
-.section-bg-image .container + svg {
+.section-bg-image .container+svg {
   transform: rotate(180deg);
   position: relative;
   bottom: -1px;
@@ -859,7 +885,7 @@ strong {
   width: 50%;
 }
 
-.custom-block-image-wrap .custom-btn  {
+.custom-block-image-wrap .custom-btn {
   border-radius: 0;
   display: block;
   padding: 15px 20px;
@@ -869,7 +895,7 @@ strong {
   padding-top: 10px;
 }
 
-.custom-block-image-wrap + .custom-block-info {
+.custom-block-image-wrap+.custom-block-info {
   /* padding-top: 20px; */
   padding-bottom: 20px;
 }
@@ -907,12 +933,12 @@ strong {
 /*---------------------------------------
   EVENTS SECTION            
 -----------------------------------------*/
-.events-section.section-bg .container > .row {
+.events-section.section-bg .container>.row {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.events-section.section-bg .container > .row .row {
+.events-section.section-bg .container>.row .row {
   margin: auto;
 }
 
@@ -948,11 +974,11 @@ strong {
   border-radius: var(--border-radius-medium);
 }
 
-.table-responsive tbody, 
-.table-responsive td, 
-.table-responsive tfoot, 
-.table-responsive th, 
-.table-responsive thead, 
+.table-responsive tbody,
+.table-responsive td,
+.table-responsive tfoot,
+.table-responsive th,
+.table-responsive thead,
 .table-responsive tr {
   border: 0;
 }
@@ -1061,7 +1087,8 @@ strong {
   right: 0;
   left: 0;
   pointer-events: none;
-  bottom: -40px; /* move wave down */
+  bottom: -40px;
+  /* move wave down */
   width: 100%;
   height: auto;
 }
@@ -1201,7 +1228,7 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--secondary-color);
   }
@@ -1285,7 +1312,7 @@ strong {
   }
 
   .contact-info-item {
-    width: 75%;
+    width: 74%;
   }
 }
 
@@ -1298,7 +1325,8 @@ strong {
 
 /* Fix anchor offset for sticky navbar */
 section[id] {
-  scroll-margin-top: 90px; /* adjust if navbar height changes */
+  scroll-margin-top: 90px;
+  /* adjust if navbar height changes */
 }
 
 /* ---------------------------
@@ -1307,8 +1335,10 @@ section[id] {
 
 /* Keep each tile same width as its image */
 .marc-member-card {
-  max-width: 360px;   /* controls card width */
-  margin: 0 auto;     /* centers inside column */
+  max-width: 360px;
+  /* controls card width */
+  margin: 0 auto;
+  /* centers inside column */
 }
 
 /* Make image and info match width */
@@ -1320,8 +1350,10 @@ section[id] {
 /* Force uniform photo size */
 .marc-member-img {
   width: 100%;
-  height: 320px;          /* uniform height for all */
-  object-fit: cover;      /* crop instead of stretching */
+  height: 320px;
+  /* uniform height for all */
+  object-fit: cover;
+  /* crop instead of stretching */
   object-position: center;
   display: block;
 }
@@ -1361,41 +1393,43 @@ section[id] {
 
 /* --- Samithi cards: force image + text to the exact same width --- */
 
-.marc-member-card{
+.marc-member-card {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
 }
 
 /* make wrapper + link full width */
-.marc-member-card .custom-block-image-wrap{
+.marc-member-card .custom-block-image-wrap {
   width: 100%;
   display: block;
   overflow: hidden;
 }
 
-.marc-member-card .custom-block-image-wrap > a{
+.marc-member-card .custom-block-image-wrap>a {
   width: 100%;
-  display: block;              /* IMPORTANT */
+  display: block;
+  /* IMPORTANT */
 }
 
 /* force image to fill that width */
-.marc-member-card img.marc-member-img{
+.marc-member-card img.marc-member-img {
   width: 100% !important;
   height: 320px;
   object-fit: cover;
-  display: block;              /* IMPORTANT */
+  display: block;
+  /* IMPORTANT */
 }
 
 /* force info (name + description) to same width */
-.marc-member-card .marc-member-info{
+.marc-member-card .marc-member-info {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
 }
 
 /* optional: keep zoom effect without affecting layout */
-.marc-member-card .custom-block-image-wrap:hover img.marc-member-img{
+.marc-member-card .custom-block-image-wrap:hover img.marc-member-img {
   transform: scale(1.12);
   transition: transform 0.3s ease;
 }
@@ -1421,4 +1455,201 @@ section[id] {
 .cd-headline.rotate-1 b {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gallery hover effect */
+.gallery-item img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Modal background clean */
+.modal-content {
+  background: transparent;
+}
+
+/* Modal: fit-to-screen gallery */
+.marc-gallery-modal {
+  background: rgba(0, 0, 0, 0.65);
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+
+  /* Fit within viewport */
+  height: min(82vh, 720px);
+}
+
+.marc-gallery-stage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+#galleryModalImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* no crop + no scroll */
+  border-radius: 12px;
+}
+
+/* Close button */
+.marc-gallery-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 5;
+  opacity: 0.9;
+}
+
+/* Next/Prev buttons */
+.marc-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.marc-gallery-nav i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.marc-gallery-nav:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.marc-gallery-prev {
+  left: 12px;
+}
+
+.marc-gallery-next {
+  right: 12px;
+}
+
+/* Make modal wider on small screens without being tall */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 10px;
+  }
+
+  .marc-gallery-modal {
+    height: 70vh;
+  }
+
+  .marc-gallery-stage {
+    padding: 12px;
+  }
+
+  .marc-gallery-nav {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* PDF Viewer box */
+.marc-pdf-viewer {
+  width: 100%;
+  height: 520px;
+  /* desktop height */
+  background: #fff;
+}
+
+.marc-pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 991px) {
+  .marc-pdf-viewer {
+    height: 460px;
+  }
+}
+
+@media (max-width: 576px) {
+  .marc-pdf-viewer {
+    height: 420px;
+  }
+}
+
+/* Poster + Magazine cards: same height + consistent padding */
+.pm-card {
+  background: #fff;
+  border-radius: var(--border-radius-medium);
+  padding: 28px;
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.10); */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared media area so poster & pdf take same height */
+.pm-media {
+  width: 100%;
+  height: 520px;
+  /* same height for both */
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* Poster image fits nicely inside same height */
+.pm-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* shows full poster without cropping */
+  display: block;
+}
+
+/* PDF iframe fills the same area */
+.pm-pdf iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .pm-media {
+    height: 460px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pm-media {
+    height: 420px;
+  }
+
+  .pm-card {
+    padding: 20px;
+  }
 }
