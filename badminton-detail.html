@@ -122,7 +122,7 @@
         </nav>
 
         <!-- HERO -->
-        <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
+        <section class="hero-section hero-50 d-flex justify-content-center align-items-center badminton-image" id="section_1">
             <div class="section-overlay"></div>
 
             <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg">
@@ -386,7 +386,7 @@
                         <div class="pm-card h-100">
                             <h3 class="mb-3 text-center">Tournament Poster</h3>
 
-                            <a href="#" class="poster-modal-trigger pm-media" data-bs-toggle="modal"
+                            <a href="javascript:void(0)" class="pm-media poster-modal-trigger" data-bs-toggle="modal"
                                 data-bs-target="#galleryModal"
                                 data-img="static/images/events/badminton-poster-2026.jpg">
                                 <img src="static/images/events/badminton-poster-2026.jpg" class="pm-poster"
@@ -399,16 +399,18 @@
                     <div class="col-lg-6 col-12">
                         <div class="pm-card h-100">
                             <h3 class="mb-3 text-center">Event Magazine</h3>
+
                             <div class="pm-media pm-pdf">
-                                <iframe src="static/images/events/badminton-magazine.pdf#view=FitH"
+                                <iframe class="pm-pdf-iframe"
+                                    src="static/images/events/badminton-magazine.pdf#view=FitH"
                                     title="MARC Badminton Magazine" loading="lazy">
                                 </iframe>
                             </div>
 
                             <div class="mt-3 text-center">
-                                <a href="static/images/events/badminton-magazine.pdf" download
-                                    class="btn custom-btn custom-border-btn ms-2">
-                                    Download PDF
+                                <a href="static/images/events/badminton-magazine.pdf" target="_blank" rel="noopener"
+                                    class="btn custom-btn">
+                                    Open / Download PDF
                                 </a>
                             </div>
                         </div>
@@ -417,6 +419,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- FOOTER -->

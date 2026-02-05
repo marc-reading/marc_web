@@ -669,6 +669,14 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
+.badminton-image{
+  background-image: url('../images/badminton-home.jpg') !important;
+}
+
+.about-image{
+  background-image: url('../images/about-home.jpg') !important;
+}
+
 .hero-section {
   background-image: url('../images/kerala4.jpg');
   background-repeat: no-repeat;
@@ -1651,5 +1659,111 @@ section[id] {
 
   .pm-card {
     padding: 20px;
+  }
+}
+
+/* ==============================
+   Event detail page fixes (mobile)
+============================== */
+
+/* Prevent the map pin card from overlapping other content on mobile */
+@media (max-width: 991px) {
+  .events-detail-section .contact-info {
+    margin-top: 28px;
+  }
+
+  .events-detail-section .contact-info-item {
+    position: static;          /* remove absolute overlay */
+    top: auto;
+    left: auto;
+    transform: none;           /* remove translate(-50%, -50%) */
+    width: 92%;                /* slightly wider */
+    max-width: 460px;
+    margin: 0 auto 14px auto;  /* center + spacing */
+  }
+
+  .events-detail-section .contact-info img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-detail-section .contact-info-item {
+    width: 94%;
+  }
+}
+
+/* ==========================
+   Poster + Magazine layout
+========================== */
+
+#poster-magazine .pm-card {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 28px;
+  border: 1px solid rgba(209, 213, 219, 0.4);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.06);
+}
+
+/* One shared media height for BOTH poster + pdf */
+#poster-magazine .pm-media {
+  width: 100%;
+  height: 520px; /* desktop: same height for both */
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(209, 213, 219, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Poster image fills the media box nicely */
+#poster-magazine .pm-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* show full poster (no crop) */
+  display: block;
+}
+
+/* PDF iframe fills the same media box */
+#poster-magazine .pm-pdf-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Mobile: reduce height so it fits screen */
+@media (max-width: 991px) {
+  #poster-magazine .pm-media {
+    height: 60vh;
+    min-height: 380px;
+  }
+
+  #poster-magazine .pm-card {
+    padding: 22px;
+  }
+}
+/* Fix event footer overlap on mobile */
+@media (max-width: 991px) {
+  .event-footer {
+    flex-direction: column;   /* stack meta + button */
+    gap: 14px;                /* spacing between them */
+  }
+
+  .event-meta {
+    margin-bottom: 0 !important; /* remove mb-4 gap handling */
+    width: 100%;
+  }
+
+  .event-cta {
+    width: 100%;
+  }
+
+  .event-cta .btn {
+    width: 100%;              /* full width button */
   }
 }
