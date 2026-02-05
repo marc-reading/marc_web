@@ -1285,7 +1285,7 @@ strong {
   }
 
   .contact-info-item {
-    width: 73%;
+    width: 75%;
   }
 }
 
@@ -1339,6 +1339,24 @@ section[id] {
 /* Optional: consistent bottom spacing if needed */
 #samithi {
   padding-bottom: 60px;
+}
+
+/* Make long emails wrap nicely inside contact card */
+.contact-info-item .contact-link {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Give a bit more width on mobile so email fits better */
+@media screen and (max-width: 480px) {
+  .contact-info-item {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .contact-info-body {
+    padding: 18px 20px;
+  }
 }
 
 /* --- Samithi cards: force image + text to the exact same width --- */
