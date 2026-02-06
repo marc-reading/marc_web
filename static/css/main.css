@@ -1785,3 +1785,41 @@ section[id] {
 .hero-section > svg:last-of-type {
   bottom: -1px; /* tiny overlap to avoid gaps */
 }
+
+/* ---------------------------
+   Sponsors Section
+---------------------------- */
+
+.sponsor-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    max-height: 160px;   /* keeps all logos same visual height */
+    object-fit: contain;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* Mobile tweak */
+@media (max-width: 576px) {
+    .sponsor-card img {
+        max-height: 120px;
+    }
+}
+
+.no-padding-top{
+  padding-top: 0px !important;
+}
