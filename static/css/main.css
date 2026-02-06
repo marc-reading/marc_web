@@ -386,7 +386,7 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -398,18 +398,18 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background: var(--secondary-color);
   color: var(--white-color);
 }
 
 .custom-border-btn {
   background: transparent;
-  border: 2px solid var(--custom-btn-bg-color);
-  color: var(--custom-btn-bg-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .custom-border-btn:hover {
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border-color: transparent;
   color: var(--white-color);
 }
