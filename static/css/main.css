@@ -1767,3 +1767,21 @@ section[id] {
     width: 100%;              /* full width button */
   }
 }
+
+/* Fix home wave */
+.hero-section svg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.hero-section > svg:first-of-type {
+  top: 0;
+}
+
+.hero-section > svg:last-of-type {
+  bottom: -1px; /* tiny overlap to avoid gaps */
+}
