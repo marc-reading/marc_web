@@ -122,7 +122,8 @@
         </nav>
 
         <!-- HERO -->
-        <section class="hero-section hero-50 d-flex justify-content-center align-items-center badminton-image" id="section_1">
+        <section class="hero-section hero-50 d-flex justify-content-center align-items-center badminton-image"
+            id="section_1">
             <div class="section-overlay"></div>
 
             <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg">
@@ -524,40 +525,52 @@
     <script>
         const galleryContainer = document.getElementById('galleryGrid');
 
-        const totalImages = 9; // change this if you add more photos
+        const totalImages = 9;
         const basePath = 'static/images/events/';
-        const labelText = 'MARC Open 2025';
 
         let html = '';
 
         for (let i = 1; i <= totalImages; i++) {
+
+            let labelText = 'MARC Open 2025';
+
+            // Custom labels
+            if (i === 4) {
+                labelText = 'MARC Open 2025 Winners 🏆';
+            } else if (i === 5) {
+                labelText = 'MARC Open 2025 Second Place 🥈';
+            } else if (i === 6) {
+                labelText = 'MARC Open 2025 Third Place 🥉';
+            }
+
             html += `
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="marc-member-card">
-                        <div class="custom-block-image-wrap">
-                            <a href="#"
-                            class="gallery-item"
-                            data-bs-toggle="modal"
-                            data-bs-target="#galleryModal"
-                            data-index="${i - 1}"
-                            data-img="${basePath}badminton${i}.jpg">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="marc-member-card">
+                    <div class="custom-block-image-wrap">
+                        <a href="#"
+                           class="gallery-item"
+                           data-bs-toggle="modal"
+                           data-bs-target="#galleryModal"
+                           data-index="${i - 1}"
+                           data-img="${basePath}badminton${i}.jpg">
 
                             <img src="${basePath}badminton${i}.jpg"
-                                class="custom-block-image img-fluid marc-member-img"
-                                alt="Badminton 2025 Photo ${i}">
-                            </a>
+                                 class="custom-block-image img-fluid marc-member-img"
+                                 alt="Badminton 2025 Photo ${i}">
+                        </a>
 
-                            <div class="custom-block-date-wrap">
+                        <div class="custom-block-date-wrap">
                             <strong class="text-white">${labelText}</strong>
-                            </div>
-                        </div>
                         </div>
                     </div>
-                    `;
+                </div>
+            </div>
+        `;
         }
 
         galleryContainer.innerHTML = html;
     </script>
+
 
 
     <!-- Modal JS-->
