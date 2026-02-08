@@ -669,11 +669,11 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
-.badminton-image{
+.badminton-image {
   background-image: url('../images/badminton-home.jpg') !important;
 }
 
-.about-image{
+.about-image {
   background-image: url('../images/about-home.jpg') !important;
 }
 
@@ -916,7 +916,7 @@ strong {
 }
 
 .custom-block-icon {
-  background: var(--custom-btn-bg-color);
+  background: var(--secondary-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   width: 60px;
@@ -933,7 +933,7 @@ strong {
 }
 
 .custom-block-icon:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background: var(--primary-color);
   color: var(--white-color);
 }
 
@@ -1673,13 +1673,17 @@ section[id] {
   }
 
   .events-detail-section .contact-info-item {
-    position: static;          /* remove absolute overlay */
+    position: static;
+    /* remove absolute overlay */
     top: auto;
     left: auto;
-    transform: none;           /* remove translate(-50%, -50%) */
-    width: 92%;                /* slightly wider */
+    transform: none;
+    /* remove translate(-50%, -50%) */
+    width: 92%;
+    /* slightly wider */
     max-width: 460px;
-    margin: 0 auto 14px auto;  /* center + spacing */
+    margin: 0 auto 14px auto;
+    /* center + spacing */
   }
 
   .events-detail-section .contact-info img {
@@ -1704,13 +1708,14 @@ section[id] {
   border-radius: var(--border-radius-medium);
   padding: 28px;
   border: 1px solid rgba(209, 213, 219, 0.4);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.06);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .06);
 }
 
 /* One shared media height for BOTH poster + pdf */
 #poster-magazine .pm-media {
   width: 100%;
-  height: 520px; /* desktop: same height for both */
+  height: 520px;
+  /* desktop: same height for both */
   border-radius: var(--border-radius-medium);
   overflow: hidden;
   background: #fff;
@@ -1724,7 +1729,8 @@ section[id] {
 #poster-magazine .pm-poster {
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* show full poster (no crop) */
+  object-fit: contain;
+  /* show full poster (no crop) */
   display: block;
 }
 
@@ -1747,15 +1753,19 @@ section[id] {
     padding: 22px;
   }
 }
+
 /* Fix event footer overlap on mobile */
 @media (max-width: 991px) {
   .event-footer {
-    flex-direction: column;   /* stack meta + button */
-    gap: 14px;                /* spacing between them */
+    flex-direction: column;
+    /* stack meta + button */
+    gap: 14px;
+    /* spacing between them */
   }
 
   .event-meta {
-    margin-bottom: 0 !important; /* remove mb-4 gap handling */
+    margin-bottom: 0 !important;
+    /* remove mb-4 gap handling */
     width: 100%;
   }
 
@@ -1764,7 +1774,8 @@ section[id] {
   }
 
   .event-cta .btn {
-    width: 100%;              /* full width button */
+    width: 100%;
+    /* full width button */
   }
 }
 
@@ -1778,12 +1789,13 @@ section[id] {
   pointer-events: none;
 }
 
-.hero-section > svg:first-of-type {
+.hero-section>svg:first-of-type {
   top: 0;
 }
 
-.hero-section > svg:last-of-type {
-  bottom: -1px; /* tiny overlap to avoid gaps */
+.hero-section>svg:last-of-type {
+  bottom: -1px;
+  /* tiny overlap to avoid gaps */
 }
 
 /* ---------------------------
@@ -1791,35 +1803,63 @@ section[id] {
 ---------------------------- */
 
 .sponsor-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 25px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sponsor-card img {
-    max-width: 100%;
-    max-height: 160px;   /* keeps all logos same visual height */
-    object-fit: contain;
+  max-width: 100%;
+  max-height: 160px;
+  /* keeps all logos same visual height */
+  object-fit: contain;
 }
 
 .sponsor-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Make sponsor card clickable */
+.sponsor-link a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Reuse custom-block-icon style */
+.sponsor-link .custom-block-icon {
+  position: absolute;
+  opacity: 0;
+  pointer-events: auto;
+}
+
+/* Show icon on hover */
+.sponsor-link:hover .custom-block-icon {
+  opacity: 1;
+}
+
+/* Optional: cursor feedback */
+.sponsor-link:hover {
+  cursor: pointer;
 }
 
 /* Mobile tweak */
 @media (max-width: 576px) {
-    .sponsor-card img {
-        max-height: 120px;
-    }
+  .sponsor-card img {
+    max-height: 120px;
+  }
 }
 
-.no-padding-top{
+.no-padding-top {
   padding-top: 0px !important;
 }
