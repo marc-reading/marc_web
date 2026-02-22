@@ -1868,3 +1868,7 @@ section[id] {
 .no-padding-top {
   padding-top: 0px !important;
 }
+
+.no-width {
+  width : 100% !important;
+}
