@@ -1872,3 +1872,14 @@ section[id] {
 .no-width {
   width : 100% !important;
 }
+
+.box-text-wrap {
+    font-size: 12px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+    padding: 5px !important;
+}
