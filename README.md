@@ -47,14 +47,37 @@ The website serves as a central platform to communicate MARC’s activities, eve
 
 ## Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **Bootstrap 5**
-- **JavaScript / jQuery**
-- **Bootstrap Icons**
-- **Google Fonts (DM Sans)**
+- **HTML5**, **CSS3** (one custom stylesheet, no framework)
+- **Vanilla JavaScript** (no jQuery / Bootstrap JS)
+- **Bootstrap Icons** (icon font only)
+- **Google Fonts** – Outfit, Plus Jakarta Sans, Anek Malayalam
 
-No backend or database is required — this is a **static website**.
+No backend, database or build step is required — this is a **static website**.
+
+---
+
+## Design
+
+Modern Kerala-themed design drawn from the MARC logo: backwater green, marigold and Kathakali red,
+with a pookalam (flower carpet) motif drawn by JavaScript (loader, hero, backgrounds, 404) and a
+chundan vallam (snake boat) in the footer. Colours and fonts are CSS variables at the top of
+`static/css/marc.css`.
+
+## Previewing locally
+
+```bash
+python3 tools/serve.py        # http://localhost:8000/
+```
+
+Links have no `.html` (`/about`, `/events`), which GitHub Pages serves automatically. The plain
+`python3 -m http.server` does not, and it never shows `404.html`, so use the script above.
+
+## Adding an event
+
+In `events.html`, copy one `<article class="event">` block and set `data-date="YYYY-MM-DD"`.
+The page works out from that date whether the event is **Upcoming** or **Past**, sorts the list and
+fills in the filter counts. Event detail pages use `data-event-date` on `<main>` in the same way to
+hide booking buttons once the event has passed.
 
 ---
 
@@ -62,23 +85,29 @@ No backend or database is required — this is a **static website**.
 
 ```text
 /
-├── index.html              # Home page
-├── about.html              # Our Story page
-├── event-detail.html       # Event details (if applicable)
+├── index.html                    # Home page
+├── about.html                    # Our Story, current Samithi, Samithi history
+├── events.html                   # All events with Upcoming / Past filter
+├── badminton-detail.html         # MARC Open Badminton Tournament
+├── entrepreneurship-detail.html  # Inspire Entrepreneurship
+├── videos.html                   # Latest YouTube video + all videos from @marc-reading
+├── contact.html                  # Contact + Partnership & Sponsorship
+├── 404.html                      # Not-found page (served automatically by GitHub Pages)
+├── sitemap.xml / robots.txt
+├── tools/serve.py                # Local preview server (clean URLs + 404 page)
 ├── static/
 │   ├── css/
-│   │   ├── bootstrap.min.css
-│   │   ├── bootstrap-icons.css
-│   │   └── main.css        # Custom styles
+│   │   ├── marc.css              # Site styles
+│   │   └── bootstrap-icons.css
 │   ├── js/
-│   │   ├── jquery.min.js
-│   │   ├── bootstrap.bundle.min.js
-│   │   ├── jquery.sticky.js
-│   │   ├── animated-headline.js
-│   │   ├── modernizr.js
-│   │   └── custom.js
+│   │   └── marc.js               # Loader, menu, pookalam, petals, events filter, lightbox
+│   ├── fonts/                    # Bootstrap Icons font
 │   └── images/
-│       ├── marc-logo.png
-│       ├── members/        # Samithi member photos
-│       └── events/         # Event images
+│       ├── hero/                 # Web-sized page banners
+│       ├── photos/               # "Kerala roots, Reading home" tiles
+│       ├── members/              # Samithi member photos
+│       ├── sponsors/
+│       └── events/               # Event images, speakers, gallery thumbs
+├── old-design/                   # Archived previous design (see its README)
 └── README.md
+```

@@ -670,20 +670,20 @@ strong {
   HERO        
 -----------------------------------------*/
 .badminton-image {
-  background-image: url('../images/badminton-home.jpg') !important;
+  background-image: url('../../../static/images/badminton-home.jpg') !important;
 }
 
 .inspire-image {
-  background-image: url('../images/inspire1.jpg') !important;
+  background-image: url('../../../static/images/inspire1.jpg') !important;
 }
 
 
 .about-image {
-  background-image: url('../images/about-home.jpg') !important;
+  background-image: url('../../../static/images/about-home.jpg') !important;
 }
 
 .hero-section {
-  background-image: url('../images/kerala4.jpg');
+  background-image: url('../../../static/images/kerala4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -738,7 +738,7 @@ strong {
   BACKGROUND IMAGE SECTION        
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url('../images/kerala2.jpg');
+  background-image: url('../../../static/images/kerala2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

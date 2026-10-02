@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /old-design/
+
+Sitemap: https://marcreading.co.uk/sitemap.xml
